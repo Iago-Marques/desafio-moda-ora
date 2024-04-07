@@ -1,0 +1,150 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html{
+   font-size: 62.5%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Viaoda+Libre&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+   --cor-background-top-header: #162028;
+   --cor-texto-menu:  #425564;
+   --cor-textos: #555;
+   --cor-fundo-footer: #0b171f;
+   --cor-texto-footer: #6f8597;
+   --fonte-titulos: "Cormorant Garamond";
+   --fonte-textos: "Roboto", sans-serif;
+   
+}
+
+.header{
+   background-color: var(--cor-background-top-header);
+}
+
+.header-bar{
+   max-width: 130rem;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-family: var(--fonte-titulos);
+}
+
+.header-bar h1{
+   padding: .5rem;
+   font-size: 3rem;
+   font-style: italic;
+   font-weight: 100;
+   color: white;
+}
+
+.nav .list{
+   display: flex;
+   list-style: none;
+   gap: 4rem;
+   font-size: 1.4rem;
+   letter-spacing: .5rem;
+}
+
+.list li a{
+   text-transform: uppercase;
+   text-decoration: none;
+   color: var(--cor-texto-menu);
+   font-weight: 600;
+   transition: color .5s;
+}
+
+.list li a:hover{
+   color:white;
+}
+
+figure .img-topo{
+   background-size: cover;
+   width: 100%; 
+}
+
+.content-1 h2{
+   font-size: 4rem;
+   text-align: center;
+   font-family: var(--fonte-titulos);
+   font-weight: 100;
+   margin: 15rem 0 4rem 0;
+   color: var(--cor-textos);
+}
+
+.content-1 .h2-text{
+   font-size: 1.6rem;
+   font-family: var(--fonte-textos);
+   font-weight: 400;
+   color: var(--cor-textos);
+   text-align: center;
+   width: 80rem;
+   margin: auto;
+   line-height: 3.5rem;
+}
+
+.img-text{
+   margin: 15rem 0;
+   display: flex;
+   justify-content: center;
+   gap: 3rem;
+}
+
+
+.img-text h3{
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 1.6rem;
+   font-family: var(--fonte-titulos);
+   padding: 2rem 0;
+   letter-spacing: 2px;
+   color: var(--cor-textos);
+}
+
+.img-text p{
+   font-size: 1.8rem;
+   text-align: center;
+   font-family: var(--fonte-textos);
+   color: var(--cor-textos);
+}
+
+.content-2{
+   background-image: url(../imagens/bg_detalhe.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position:left left;
+   height: 80rem;
+}
+
+.content-2 h2{
+   max-width: 170rem;
+   font-size: 7rem;
+   font-family: var(--fonte-titulos);
+   font-weight: 100;
+   text-transform: uppercase;
+   padding: 15rem 0 6rem 10rem;
+   color: white;
+   line-height: 10rem;
+}
+
+.content-2 p{
+   max-width: 100rem;
+   font-size: 2.4rem;
+   padding: 0 0 15rem 10rem;
+   color: white;
+}
+
+.footer{
+   background-color: var(--cor-fundo-footer);
+   font-size: 2rem;
+   padding: 2rem;
+   text-align: center;
+   color: var(--cor-texto-footer);
+   letter-spacing: 2px;
+}
